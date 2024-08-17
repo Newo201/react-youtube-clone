@@ -1,4 +1,4 @@
-import React from 'react'
+import './navbar.css'
 import menu_icon from "../../assets/menu.png"
 import logo from '../../assets/logo.png'
 import search_icon from '../../assets/search.png'
@@ -17,14 +17,17 @@ export const Navbar = () => {
         </div>
         {/* The middle component of the navbar which includes the search icon*/}
         <div className = "nav-middle flex-div">
-            <input type = "text" placeholder = "Search"/>
+            <div className="search-box flex-div">
+                <input type = "text" placeholder = "Search"/>
+                <img className = "search-icon" src = {search_icon} alt = ""/>
+            </div>
         </div>
         {/* The right component of the navbar which includes all of the icons*/}
-        <div className = "nav-middle flex-div">
+        <div className = "nav-right flex-div">
             <img className = 'upload_icon' src = {upload_icon} alt = "" />
             <img className = 'more-icon' src = {more_icon} alt = "" />
             <img className = 'notification-icon' src = {notifaction_icon} alt = "" />
-            <img className = 'profile-icon' src = {profile_icon} alt = "" />
+            <img className = 'user-icon' src = {profile_icon} alt = "" />
         </div>
     </nav>
   )
