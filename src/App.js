@@ -3,10 +3,13 @@ import { Navbar } from './components/navbar/navbar';
 import Sidebar from './components/sidebar/sidebar';
 
 function App() {
+
+  const [sidebar, setSidebar] = useState(true)
+
   return (
     <div className="App">
-      <Navbar />
-      <Sidebar />
+      <Navbar setSidebar = {setSidebar}/>
+      <Sidebar sidebar = {sidebar}/>
     </div>
   );
 }

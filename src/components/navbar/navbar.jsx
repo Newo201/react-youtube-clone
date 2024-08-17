@@ -7,7 +7,7 @@ import more_icon from '../../assets/more.png'
 import notifaction_icon from '../../assets/notification.png'
 import profile_icon from '../../assets/user_profile.jpg'
 
-export const Navbar = () => {
+export default function Navbar() {
   return (
     <nav className = 'flex-div'>
         {/* The left component of the navbar */}

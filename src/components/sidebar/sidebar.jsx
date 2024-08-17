@@ -52,8 +52,8 @@ export default function Sidebar() {
             </div>
         </div>
         <hr></hr>
-        <div className = "Subscribers">
-            <p>Subscribed</p>
+        <div className = "subscribers">
+            <h3 className = "subscription-title">Subscribed</h3>
             <div className = "flex-div">
                 <img className = "profile-icon" src = {cameron} />
                 <p>PewDiePie</p>
