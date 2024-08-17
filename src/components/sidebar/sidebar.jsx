@@ -7,6 +7,7 @@ import music_icon from "../../assets/music.png"
 import blogs_icon from "../../assets/blogs.png"
 import sports_icon from "../../assets/sports.png"
 import news_icon from "../../assets/news.png"
+import cameron from "../../assets/cameron.png"
 import "./sidebar.css"
 
 export default function Sidebar() {
@@ -50,8 +51,29 @@ export default function Sidebar() {
                 <p>News</p>
             </div>
         </div>
+        <hr></hr>
         <div className = "Subscribers">
-
+            <p>Subscribed</p>
+            <div className = "flex-div">
+                <img className = "profile-icon" src = {cameron} />
+                <p>PewDiePie</p>
+            </div>
+            <div className = "flex-div">
+                <img className = "profile-icon" src = {cameron} />
+                <p>PewDiePie</p>
+            </div>
+            <div className = "flex-div">
+                <img className = "profile-icon" src = {cameron} />
+                <p>PewDiePie</p>
+            </div>
+            <div className = "flex-div">
+                <img className = "profile-icon" src = {cameron} />
+                <p>PewDiePie</p>
+            </div>
+            <div className = "flex-div">
+                <img className = "profile-icon" src = {cameron} />
+                <p>PewDiePie</p>
+            </div>
         </div>
     </nav>
   )
