@@ -10,9 +10,9 @@ import news_icon from "../../assets/news.png"
 import cameron from "../../assets/cameron.png"
 import "./sidebar.css"
 
-export default function Sidebar() {
+export default function Sidebar({sidebar}) {
   return (
-    <nav className = "side-nav">
+    <nav className = {`side-nav ${sidebar?"":"small-sidebar"}`}>
         <div className = "categories">
             <div className = "flex-div">
                 <img className = "home-icon" src = {home_icon} />
