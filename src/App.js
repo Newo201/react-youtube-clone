@@ -1,6 +1,8 @@
 import './index';
-import { Navbar } from './components/navbar/navbar';
-import Sidebar from './components/sidebar/sidebar';
+import { useState } from 'react';
+import Navbar from './components/navbar/navbar';
+import { Route, Routes } from 'react-router-dom';
+import Home from './home/home';
 
 function App() {
 
@@ -9,7 +11,9 @@ function App() {
   return (
     <div className="App">
       <Navbar setSidebar = {setSidebar}/>
-      <Sidebar sidebar = {sidebar}/>
+      <Routes>
+        <Route path = "/" element = {<Home sidebar = {sidebar}/>}/>
+      </Routes>
     </div>
   );
 }
