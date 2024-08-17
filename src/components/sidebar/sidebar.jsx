@@ -5,6 +5,7 @@ import entertainment_icon from "../../assets/entertainment.png"
 import technology_icon from "../../assets/tech.png"
 import music_icon from "../../assets/music.png"
 import blogs_icon from "../../assets/blogs.png"
+import sports_icon from "../../assets/sports.png"
 import news_icon from "../../assets/news.png"
 import "./sidebar.css"
 
