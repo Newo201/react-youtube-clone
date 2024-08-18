@@ -1,0 +1,22 @@
+.video {
+    margin-top: 20px;
+
+}
+
+.video-thumbnail {
+    width: 100%;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.video-description * {
+    padding-top: 5px;
+}
+
+.video-description h3 {
+    font-weight: 600;
+    color: #000;
+}
