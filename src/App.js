@@ -2,7 +2,8 @@ import './index';
 import { useState } from 'react';
 import Navbar from './components/navbar/navbar';
 import { Route, Routes } from 'react-router-dom';
-import Home from './home/home';
+import Home from './pages/home/home';
+import VideoRecs from './components/video-recs/video-recs';
 
 function App() {
 
@@ -13,7 +14,9 @@ function App() {
       <Navbar setSidebar = {setSidebar}/>
       <Routes>
         <Route path = "/" element = {<Home sidebar = {sidebar}/>}/>
+        <Route path = "/video" element = {<VideoRecs sidebar = {sidebar}/>}/>
       </Routes>
+
     </div>
   );
 }

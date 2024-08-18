@@ -1,0 +1,11 @@
+.display-rec {
+    width: 500px;
+    align-items: right;
+    margin-left: auto;
+    margin-right: 150px;
+}
+
+.video-display {
+    padding: 0px 20px;
+    width: auto;
+}

@@ -1,10 +1,25 @@
 .video {
     margin-top: 20px;
-
 }
+
+.video-display-grid {
+    display: grid;
+    grid-template-columns: 7fr 2fr;
+    grid-gap: 10px;
+}
+
+.small-video {
+    height: 150px;
+}
+
 
 .video-thumbnail {
     width: 100%;
+}
+
+.half-width {
+    width: 50%;
+    height: 150px;
 }
 
 .video-thumbnail img {
@@ -14,9 +29,28 @@
 
 .video-description * {
     padding-top: 5px;
+    top: 0;
 }
 
 .video-description h3 {
     font-weight: 600;
     color: #000;
+}
+
+.side-description {
+    height: 100%;
+    margin-left: 10px;
+}
+
+.side-description h4 {
+    padding-top: 10px;
+    font-weight: normal;
+}
+
+.large-description h3 {
+    font-size: 24px;
+}
+
+.large-video hr {
+    margin: 10px 0px;
 }
