@@ -12,8 +12,8 @@ export default function Home({sidebar}) {
     
     return (
         <>
-            <Sidebar sidebar={sidebar} category = {currentCategory} setCurrentCategory = {setCurrentCategory}/>
-            <Feed sidebar = {sidebar} category = {currentCategory}/>
+            <Sidebar sidebar={sidebar} currentCategory = {currentCategory} setCurrentCategory = {setCurrentCategory}/>
+            <Feed sidebar = {sidebar} currentCategory = {currentCategory}/>
         </>
 
     )

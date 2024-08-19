@@ -38,7 +38,7 @@ export default function Sidebar({sidebar, currentCategory, setCurrentCategory}) 
         <div className = "categories">
             {categories.map(cat => {
                 return(<SingleCategory category = {cat.name} category_icon={cat.icon} id = {cat.id}
-                setCurrentCategory = {setCurrentCategory}/>)
+                currentCategory = {currentCategory} setCurrentCategory = {setCurrentCategory}/>)
             })}
         </div>
         <hr></hr>
