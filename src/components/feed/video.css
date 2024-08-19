@@ -27,6 +27,10 @@
     border-radius: 5%;
 }
 
+.video-thumbnail video {
+    width: 100%;
+}
+
 .video-description * {
     padding-top: 5px;
     top: 0;
@@ -35,6 +39,17 @@
 .video-description h3 {
     font-weight: 600;
     color: #000;
+}
+
+.large-description img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.large-description span {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 15px;
 }
 
 .side-description {
@@ -47,10 +62,24 @@
     font-weight: normal;
 }
 
+.large-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
 .large-description h3 {
     font-size: 24px;
 }
 
 .large-video hr {
+    margin: 10px 0px;
+}
+
+.large-video h3 {
     margin: 10px 0px;
 }

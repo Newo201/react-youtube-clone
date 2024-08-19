@@ -1,12 +1,17 @@
 import LargeVideo from "../feed/large-video"
 import SmallVideo from "../feed/small-video"
+import VideoDescription from "../feed/video-description"
+import Comment from "../comments/comment"
 import "./video-rec.css"
+import CommentList from "../comments/comment-list"
 
 export default function VideoRecs() {
   return (
     <div class = "video-display-grid">
     <div class = "video-display">
         <LargeVideo />
+        <VideoDescription />
+        <CommentList />
     </div>
     <div className = "display-rec flex-col">
         <SmallVideo />
