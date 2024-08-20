@@ -7,12 +7,6 @@ import CommentList from "../comments/comment-list"
 
 export default function VideoRecs() {
   return (
-    <div class = "video-display-grid">
-    <div class = "video-display">
-        <LargeVideo />
-        <VideoDescription />
-        <CommentList />
-    </div>
     <div className = "display-rec flex-col">
         <SmallVideo />
         <SmallVideo />
@@ -24,7 +18,6 @@ export default function VideoRecs() {
         <SmallVideo />
         <SmallVideo />
         <SmallVideo />
-    </div>
     </div>
 
     // <div className = "flex-div">

@@ -1,9 +1,10 @@
-import Video from "./video";
+import Video from "./feed-video";
 import { API_KEY } from "../../Data";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios"
 import "./feed.css"
+import FeedVideo from "./feed-video";
 
 export default function Feed({sidebar, currentCategory}) {
 
@@ -31,7 +32,7 @@ export default function Feed({sidebar, currentCategory}) {
       {data.map((video, index) => {
         return (
           <Link to = {`video/${video.snippet.categoryId}/${video.id}`}>
-            <Video video_img = {video.snippet.thumbnails.medium.url} title = {video.snippet.title} 
+            <FeedVideo key = {index} video_img = {video.snippet.thumbnails.medium.url} title = {video.snippet.title} 
             channel = {video.snippet.channelTitle} views = {video.statistics.viewCount} 
             published = {video.snippet.publishedAt}/>
           </Link>

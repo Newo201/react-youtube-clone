@@ -1,20 +1,19 @@
 import cameron from "../../assets/cameron.png"
 import "./description.css"
 
-export default function VideoDescription() {
+export default function VideoDescription({videoData}) {
   return (
     <>
     <div className = "publisher">
         <img src = {cameron}/>
         <div>
-            <p>Mr Beast</p>
+            <p>{videoData?videoData.snippet.channelTitle: 'Title Here'}</p>
             <span>1M Subscribers</span>
         </div>
         <button>Subscribe</button>
     </div>
     <div className = "description">
-        <p>Channel that makes learning easy</p>
-        <p>Subscribe to Watch More Tutorials on Web Development</p>
+        <p>{videoData?videoData.snippet.description.slice(0, 250): 'Description Here'}</p>
         <hr/>
     </div>
 

@@ -27,6 +27,11 @@
     border-radius: 5%;
 }
 
+.video-thumbnail iframe {
+    width: 100%;
+    height: 37vw;
+}
+
 .video-thumbnail video {
     width: 100%;
 }

@@ -6,6 +6,7 @@ import upload_icon from '../../assets/upload.png'
 import more_icon from '../../assets/more.png'
 import notifaction_icon from '../../assets/notification.png'
 import profile_icon from '../../assets/user_profile.jpg'
+import { Link } from 'react-router-dom'
 
 export default function Navbar({setSidebar}) {
 
@@ -18,7 +19,7 @@ export default function Navbar({setSidebar}) {
         {/* The left component of the navbar */}
         <div className = 'nav-left flex-div'>
             <img className = 'menu-icon' onClick = {toggleSidebar} src = {menu_icon} alt = "" />
-            <img className = 'logo' src  = {logo} alt = ""/>
+            <Link to = '/'><img className = 'logo' src  = {logo} alt = ""/></Link>
         </div>
         {/* The middle component of the navbar which includes the search icon*/}
         <div className = "nav-middle flex-div">
