@@ -21,7 +21,7 @@ export default function LargeVideo({videoId, videoData}) {
         <h3>{videoData?videoData.snippet.title:"Title Here"}</h3>
         <div className = 'large-description'>
             <p>{videoData?ValueConverter(videoData.statistics.viewCount):0} Views &bull; 
-              {videoData?TimeConverter(videoData.snippet.publishedAt):'11 Hours Ago'}</p>
+               {videoData?TimeConverter(videoData.snippet.publishedAt):'11 Hours Ago'}</p>
             <div>
                 <span><img src = {like}/> {videoData?ValueConverter(videoData.statistics.likeCount):0}</span>
                 <span><img src = {dislike}/> </span>

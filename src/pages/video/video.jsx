@@ -10,12 +10,8 @@ export default function Video() {
 
     return (
         <div className = "video-display-grid">
-            <div>
             <PlayVideo videoId = {videoId} />
-            </div>
-            <div>
             <VideoRecs categoryId  = {categoryId}/>
-            </div>
         </div>
     )
 }

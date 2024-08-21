@@ -2,6 +2,7 @@ import LargeVideo from "../../components/feed/large-video"
 import VideoDescription from "../../components/feed/video-description"
 import CommentList from "../../components/comments/comment-list"
 import { useState, useEffect } from "react"
+import { useParams } from "react-router-dom"
 import { API_KEY } from "../../Data"
 import axios from "axios"
 
@@ -23,7 +24,7 @@ export default function PlayVideo({videoId}) {
 
     useEffect(() => {
       fetchData()
-    }, [])
+    }, [videoId])
 
 
     return (

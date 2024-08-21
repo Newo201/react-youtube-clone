@@ -31,7 +31,7 @@ export default function Feed({sidebar, currentCategory}) {
     <div className = {`video-grid ${sidebar?"":"large-container"}`}>
       {data.map((video, index) => {
         return (
-          <Link to = {`video/${video.snippet.categoryId}/${video.id}`}>
+          <Link to = {`/video/${video.snippet.categoryId}/${video.id}`}>
             <FeedVideo key = {index} video_img = {video.snippet.thumbnails.medium.url} title = {video.snippet.title} 
             channel = {video.snippet.channelTitle} views = {video.statistics.viewCount} 
             published = {video.snippet.publishedAt}/>

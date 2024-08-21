@@ -29,7 +29,7 @@ export default function VideoRecs({categoryId}) {
   return (
     <div className = "display-rec flex-col">
       {data?data.map((video, index) => {
-        return <Link to = {`video/${video.snippet.categoryId}/${video.id}`}>
+        return <Link to = {`/video/${video.snippet.categoryId}/${video.id}`}>
           <SmallVideo key = {index} video_img = {video.snippet.thumbnails.medium.url} title = {video.snippet.title} 
           channel = {video.snippet.channelTitle} views = {video.statistics.viewCount} 
           published = {video.snippet.publishedAt} />
