@@ -1,16 +1,17 @@
 import "./video.css"
-import video from "../../assets/thumbnail1.png"
+import ValueConverter from "../../utils/value-converter"
+import TimeConverter from "../../utils/time-converter"
 
-export default function SmallVideo() {
+export default function SmallVideo({video_img, title, channel, views, published}) {
     return (
-      <div className = {`video small-video flex-div`}>
-        <div className = {`video-thumbnail half-width`}>
-            <img src = {video}/>
+      <div className = {`video small-video`}>
+        <div>
+            <img src = {video_img}/>
         </div>
         <div className = {'side-description'}>
-            <h3>7 Days Stranded in a Cave</h3>
-            <h4>Mr Beast</h4>
-            <p>26M Views &bull; 11 Hours Ago</p>
+            <h3>{title}</h3>
+            <h4>{channel}</h4>
+            <p>{ValueConverter(views)} &bull; {TimeConverter(published)}</p>
         </div>
       </div>
     )

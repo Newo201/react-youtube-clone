@@ -1,0 +1,6 @@
+.video-display-grid {
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    grid-gap: 10px;
+    margin-right: 2rem;
+}

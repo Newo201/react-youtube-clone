@@ -10,6 +10,8 @@
 
 .small-video {
     height: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 
@@ -17,9 +19,8 @@
     width: 100%;
 }
 
-.half-width {
-    width: 50%;
-    height: 150px;
+.small-video img {
+    width: 250px;
 }
 
 .video-thumbnail img {

@@ -13,7 +13,7 @@ export default function CommentList({videoData}) {
             const commentUrl = "https://www.googleapis.com/youtube/v3/commentThreads"
             const commentParams = {
                 part: 'snippet', videoId: videoData.id, 
-                max_results: 50, key: API_KEY
+                maxResults: 20, key: API_KEY
             }
             const result = await axios.get(commentUrl, {params: commentParams})
             const data = result.data.items
