@@ -4,3 +4,11 @@
     grid-gap: 10px;
     margin-right: 2rem;
 }
+
+@media (max-width: 1100px) {
+    .video-display-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin-right: 0;
+    }
+}
